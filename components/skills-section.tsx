@@ -44,6 +44,10 @@ export default function SkillsSection() {
           </div>
           <div className="flex items-center gap-2">
             <CheckCircle className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+            <span>Playwright</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle className="h-5 w-5 text-emerald-400 flex-shrink-0" />
             <span>.NET Framework</span>
           </div>
           <div className="flex items-center gap-2">

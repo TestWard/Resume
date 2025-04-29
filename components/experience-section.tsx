@@ -22,12 +22,11 @@ export default function ExperienceSection() {
 
         <div className="space-y-3 font-mono text-sm">
           <p>
-            • Maintained automated test suites on the CI, ensuring tests passed for each run and proactively addressing
-            failures
-          </p>
-          <p>
             • Utilized Azure DevOps to run test suites, monitor pipelines, and ensure all components were functioning as
             expected
+          </p>
+          <p>
+            • Migrated an existing Selenium-based test suite to Playwright, improving execution speed, stability, and reducing flakiness
           </p>
           <p>• Developed tools to test the software more effectively, improving test coverage and efficiency</p>
           <p>
@@ -37,6 +36,12 @@ export default function ExperienceSection() {
           <p>
             • Followed the Page Object Model (POM) design pattern to structure and maintain automation test scripts
             efficiently
+          </p>
+          <p>
+            • Automated API calls to retrieve and modify member data, simulating changes without direct access to production databases
+          </p>
+          <p>
+            • Developed custom API tests to compare data between the backend and frontend, ensuring data consistency and accuracy displayed on the user interface
           </p>
         </div>
       </div>

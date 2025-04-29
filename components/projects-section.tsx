@@ -39,6 +39,16 @@ export default function ProjectsSection() {
         >
           Business Impact
         </button>
+        <button
+          onClick={() => setActiveTab("personal")}
+          className={`px-4 py-3 font-mono text-sm whitespace-nowrap ${
+            activeTab === "personal"
+              ? "border-b-2 border-emerald-400 text-emerald-400"
+              : "text-zinc-400 hover:text-zinc-200"
+          }`}
+        >
+          Personal Projects
+        </button>
       </div>
 
       <div className="p-6">
@@ -162,6 +172,48 @@ export default function ProjectsSection() {
                   <p>- Increased test automation coverage to 80% for core features</p>
                   <p>- Improved mean time to detect (MTTD) for critical issues</p>
                   <p>- Enhanced overall product quality and reliability</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "personal" && (
+          <div>
+            <div className="flex items-start gap-3 mb-4">
+              <Code2 className="h-6 w-6 text-emerald-400 mt-1" />
+              <div>
+                <h3 className="text-xl font-mono font-semibold">Personal Projects</h3>
+                <p className="text-zinc-400 mt-1">
+                  Independent projects showcasing technical skills and creativity
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 space-y-4 font-mono">
+              <div className="border border-zinc-700 rounded-md p-4 bg-zinc-900/50">
+                <div className="flex items-center gap-2 mb-2">
+                  <CheckCircle2 className="h-5 w-5 text-emerald-400" />
+                  <span className="font-semibold">ReadersTavern</span>
+                </div>
+                <div className="pl-7 text-sm text-zinc-300 space-y-1">
+                  <p>- A book club-inspired social media platform built with Next.js and PostgreSQL</p>
+                  <p>- Features include authentication, user profiles, and interactive book threads</p>
+                  <p>- Enables users to create book collections and join discussions</p>
+                  <p>- <a href="https://readerstavern.com" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">View Project</a></p>
+                </div>
+              </div>
+
+              <div className="border border-zinc-700 rounded-md p-4 bg-zinc-900/50">
+                <div className="flex items-center gap-2 mb-2">
+                  <CheckCircle2 className="h-5 w-5 text-emerald-400" />
+                  <span className="font-semibold">Online Resume Website</span>
+                </div>
+                <div className="pl-7 text-sm text-zinc-300 space-y-1">
+                  <p>- A modern, responsive online resume portfolio created using Next.js</p>
+                  <p>- Features dynamic data handling and sleek frontend design</p>
+                  <p>- Serves as a live portfolio showcasing experience, skills, and technical projects</p>
+                  <p>- <a href="https://edward-basulto-resume.vercel.app" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">You're already here!</a></p>
                 </div>
               </div>
             </div>
